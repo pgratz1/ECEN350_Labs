@@ -46,7 +46,7 @@ module DataMemory(ReadData , Address , WriteData , MemoryRead , MemoryWrite , Cl
 
    // This always block reads the data memory and places a double word
    // on the ReadData bus.
-   always @(posedge Clock)
+   always @*
      begin
         if(MemoryRead)
           begin
